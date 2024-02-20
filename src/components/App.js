@@ -15,9 +15,12 @@ const App = () => {
 
   return (
     <div>
-        <p >Enter Your name:</p>
-        <input onChange={onChangeText}/>
-        {inputValue && <p>{`Hello ${inputValue}!`}</p>} 
+       <form>
+       <label >Enter Your name:</label>
+       <input onChange={onChangeText} type="text"/>
+       <p>{`Hello ${inputValue}!`}</p>
+       </form>
+       
     </div>
   )
 }
